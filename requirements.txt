@@ -1,0 +1,20 @@
+fastapi
+uvicorn
+python-multipart
+twilio
+requests
+python-dotenv
+numpy
+scipy
+librosa
+resemblyzer
+setuptools<82
+# Layer 1 — scam number gate
+pymongo[srv]
+# Layer 3 — local AI-voice detector (torch was previously pulled in by openai-whisper; resemblyzer also needs it)
+torch
+transformers
+# Layer 4 — Gemini verdict
+google-genai
+# tests
+pytest
